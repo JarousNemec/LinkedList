@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //LinkedList<int> linkedList = new LinkedList<int>();
             // Node<int> node1 = new Node<int>() { Value = 10 };
@@ -17,7 +14,7 @@ namespace LinkedList
             // Console.WriteLine(node1.Value);
             // Console.WriteLine(node1.Next.Value);
 
-            CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
+            var customLinkedList = new CustomLinkedList<int>();
             customLinkedList.AddFirst(69);
             customLinkedList.AddLast(2);
             customLinkedList.AddLast(4);
@@ -25,7 +22,7 @@ namespace LinkedList
             customLinkedList.AddLast(35);
             customLinkedList.AddLast(1);
             
-            CustomLinkedList<int> customLinkedList2 = new CustomLinkedList<int>(){69,2,4,15,35,1};
+            var customLinkedList2 = new CustomLinkedList<int>(){69,2,4,15,35,1};
             
             foreach (var node in customLinkedList)
             {
@@ -35,7 +32,7 @@ namespace LinkedList
             Console.WriteLine("--------------------------");
             //customLinkedList.WriteFromLast();
             Console.WriteLine(customLinkedList.GetOnIndex(3));
-            LinkedList<int> l = new LinkedList<int>();
+            var l = new LinkedList<int>();
             l.AddFirst(4);
             l.AddFirst(9);
             Console.ReadKey();

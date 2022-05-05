@@ -22,8 +22,8 @@ public class CustomLinkedListTests
         Assert.IsNull(l.GetOnIndex(1));
 
         l = new CustomLinkedList<int>() { 5, 9, 7, 1, 3, 4 };
-        List<int> lExpected = new List<int>() { 5, 9, 7, 1, 3, 4 };
-        List<int> lActual = new List<int>();
+        var lExpected = new List<int>() { 5, 9, 7, 1, 3, 4 };
+        var lActual = new List<int>();
         foreach (int item in l)
         {
             lActual.Add(item);
@@ -54,8 +54,8 @@ public class CustomLinkedListTests
         l.AddFirst(3);
         l.AddFirst(1);
 
-        List<int> lExpected = new List<int>() { 1, 3, 1, 3, 9, 5 };
-        List<int> lActual = new List<int>();
+        var lExpected = new List<int>() { 1, 3, 1, 3, 9, 5 };
+        var lActual = new List<int>();
         foreach (int item in l)
         {
             lActual.Add(item);
@@ -89,8 +89,8 @@ public class CustomLinkedListTests
         l.AddLast(3);
         l.AddLast(4);
 
-        List<int> lExpected = new List<int>() { 5, 9, 7, 1, 3, 4 };
-        List<int> lActual = new List<int>();
+        var lExpected = new List<int>() { 5, 9, 7, 1, 3, 4 };
+        var lActual = new List<int>();
         foreach (int item in l)
         {
             lActual.Add(item);
